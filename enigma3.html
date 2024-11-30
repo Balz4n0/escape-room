@@ -1,0 +1,26 @@
+<!-- Enigma 3: Protezione del server -->
+<div class="enigma " id="enigma3">
+   
+    <link rel="stylesheet" href="enigma3.css">
+   
+    <h2>Enigma 3: Protezione del server</h2>
+  
+    <p>Il server è protetto da un header di autorizzazione. Devi inviare il giusto token di autorizzazione per ottenere l'accesso. Seleziona il token di autorizzazione richiesto.</p>
+  
+    <label for="userAuthToken">Token di autorizzazione:</label>
+  
+    <select id="userAuthToken">
+        <option value="Bearer 1234ABCTOKEN">Bearer 1234ABCTOKEN</option>
+        <option value="Bearer 9876XYZTOKEN">Bearer 9876XYZTOKEN</option>
+        <option value="Bearer ABCD5678TOKEN">Bearer ABCD5678TOKEN</option>
+    </select>
+    
+    
+
+    <button onclick="checkAuthToken()">Invia</button>
+    <a id="nextEnigmaLink" href="finale.html"></a>
+    <p class="feedback hidden" id="feedback3"></p>
+    
+    <script src="enigma3.js"></script>
+
+</div>

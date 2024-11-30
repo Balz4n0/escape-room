@@ -1,0 +1,41 @@
+/* Stile per la pagina di introduzione */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#intro {
+    text-align: center;
+    padding: 50px;
+    color: #ffffff;
+}
+
+#intro h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#intro button {
+    background-color: #00ff08;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#intro button:hover {
+    background-color: #45a049;
+}

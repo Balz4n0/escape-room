@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Dogs: Il Codice Perduto</title>
+    <link rel="stylesheet" href="enigma1.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Watch Dogs: Il Codice Perduto</h1>
+
+        <!-- Enigma 1: Richiesta HTTP -->
+        <div class="enigma" id="enigma1">
+            <h2>Enigma 1: Invia la richiesta GET</h2>
+            <p id="quesito1">Per connetterti al server, devi inviare una richiesta GET utilizzando il linguaggio giusto (Python). Completa il codice di richiesta GET per ottenere una risposta.</p>
+            <pre id="quesito1">import requests
+url = "http://localhost:5000/codice"
+response = requests.get(url)
+print(response.text)</pre>
+            
+            <label for="userCode">Scegli il Codice di risposta:</label>
+            <select id="userCode" onchange="checkCode()">
+                <option value="">--Seleziona--</option>
+                <option value="ZYX321WQ">ZYX321WQ</option>
+                <option value="ABC123XY">ABC123XY</option>
+                <option value="QWE987RT">QWE987RT</option>
+                <option value="XYZ456LM">XYZ456LM</option>
+            </select>
+
+            <!-- Il link per il secondo enigma è inizialmente disabilitato -->
+            <a id="nextEnigmaLink" href="enigma2.html">
+                <button id="nextEnigmaButton" disabled>Invia</button>
+            </a>
+
+            <p class="feedback hidden" id="feedback"></p>
+
+        </div>
+
+    </div>
+
+    <script src="enigma1.js"></script>
+
+</body>
+</html>
+
