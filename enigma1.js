@@ -13,8 +13,23 @@ function checkCode() {
         nextButton.disabled = true; // Disabilito il pulsante se la risposta è errata
     }
 }
-
 function toggleSolution(enigmaNumber) {
     var solution = document.getElementById('solution' + enigmaNumber);
     solution.classList.toggle('hidden');
+}
+
+function checkAuthToken() {
+    const selectedToken = document.getElementById("userAuthToken").value;
+    const feedback = document.getElementById("feedback3");
+    // Correct token
+    const correctToken = "Bearer 9876XYZTOKEN";
+    if (selectedToken === correctToken) {
+        feedback.textContent = "Token corretto! Accesso consentito.";
+        feedback.classList.remove("hidden");
+        feedback.style.color = "green";
+    } else {
+        feedback.textContent = "Token errato! Riprova.";
+        feedback.classList.remove("hidden");
+        feedback.style.color = "red";
+    }
 }

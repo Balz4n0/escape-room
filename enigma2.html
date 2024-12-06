@@ -7,45 +7,34 @@
     <link rel="stylesheet" href="enigma2.css">
 </head>
 <body>
-
     <div class="container">
         <h1>Watch Dogs: Il Codice Perduto</h1>
-
         <!-- Enigma 2: Aggiungi la rotta al server -->
         <div class="enigma" id="enigma2">
-            <h2>Enigma 2: Aggiungi la rotta al server</h2>
-            <p id="quesito2">Per continuare, devi aggiungere una rotta al server Python. La rotta che restituisce il Codice Perduto è /codice. Completa il codice per configurare correttamente la rotta.</p>
+            <h2>Enigma 2: Add the route to the server</h2>
+            <p id="quesito2">To continue, you need to add a route to the Python server. The route that returns Lost Code is /code. Complete the code to properly configure the route.</p>
             <pre id="quesito2">from flask import Flask
 app = Flask(__name__)
-
 @app.route('/codice')
 def codice():
-    return "ABC123XY"  # Codice di risposta
-
+    return "ABC3231Y"  # Codice di risposta
 if __name__ == '__main__':
     app.run(debug=True)</pre>
-
             <label for="userRouteCode">Codice di rotta:</label>
-            <select id="userRouteCode" onchange="checkRouteCode()">
+            <select id="userRouteCode" .onchange="userAuthToken()">
                 <option value="">--Seleziona--</option>
-                <option value="ABC123XY">ABC123XY</option>
+                <option value="ABC123XY">ABC3231XY</option>
                 <option value="XYZ456LM">XYZ456LM</option>
-                <option value="ZYX321WQ">ZYX321WQ</option>
-                <option value="QWE987RT">QWE987RT</option>
+                <option value="ZYX321WQ">ZY2501WQ</option>
+                <option value="QWE987RT">QWE390R7</option>
             </select>
-
             <!-- Il link per il terzo enigma è inizialmente disabilitato -->
-            <a id="nextEnigmaLink" href="enigma3.html">
+            <a id="nextEnigmaLink" href="enigma3(9876XYZ).html">
                 <button id="nextEnigmaButton" disabled>Invia</button>
             </a>
-
             <p class="feedback hidden" id="feedback2"></p>
-
         </div>
-
     </div>
-
     <script src="enigma2.js"></script>
-
 </body>
 </html>

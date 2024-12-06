@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.enigma {
+    background-color: #222;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    width: 600px;
+    max-width: 90%;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+code {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.final-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners for the image */
+    margin-top: 20px; /* Space above the image */
+}
+
+input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: #333;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

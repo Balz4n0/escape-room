@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Dogs: Il Codice Perduto</title>
+    <link rel="stylesheet" href="enigma3.css">
+ </head>
+  <body>
+
+    <div class="container">
+
+   <div class="enigma" id="enigma3">
+   
+    <h2>Enigma 3: Protección del servidor</h2>
+  
+    <p>El servidor está protegido por un encabezado de autorización.
+      Debe enviar el token de autorización correcto para obtener acceso.
+      Seleccione el token de autorización requerido.    P.s(Servidor=Server)</p>
+  
+    <label for="userAuthToken">Token di autorizzazione:</label>
+  
+    <select id="userAuthToken">
+        <option value="Bearer 1234ABCTOKEN">Bearer 1234ABCTOKEN</option>
+        <option value="Bearer 9876XYZTOKEN">Bearer 9876XYZTOKEN</option>
+        <option value="Bearer ABCD5678TOKEN">Bearer ABCD5678TOKEN</option>
+    </select>
+    
+    <button onclick="checkAuthToken()">Invia</button>
+    <p class="feedback hidden" id="feedback3"></p>
+    
+    <script src="enigma3.js"></script>
+    </div>
+   </div>
+  </body>
+</html>

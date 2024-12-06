@@ -1,20 +1,29 @@
-function checkRouteCode() {
-    const userCode = document.getElementById('userRouteCode').value;
-    const correctCode = 'QWE987RT';  // The correct route code for /codice
-    
-    const feedback = document.getElementById('feedback2');
-    const nextButton = document.getElementById('nextEnigmaButton');
-    
-    if (userCode === correctCode) {
-        feedback.textContent = "Codice di rotta corretto! Puoi continuare.";
-        feedback.style.color = 'green';
-        nextButton.disabled = false;  // Enable the "Invia" button
+function checkAuthToken() {
+    const selectedToken = document.getElementById("userAuthToken").value;
+    const feedback = document.getElementById("feedback2");
+    // Correct token
+    const correctToken = "ABC3231XY";
+    if (selectedToken === correctToken) {
+        feedback.textContent = "Token corretto! Accesso consentito.";
+        feedback.classList.remove("hidden");
+        feedback.style.color = "green";
+
+        
+        // Redirect to enigma3.html
+        window.location.href = "enigma3 9876XYZ.html";
     } else {
-        feedback.textContent = "Codice di rotta errato. Riprova.";
-        feedback.style.color = 'red';
-        nextButton.disabled = true;  // Keep the button disabled
+        feedback.textContent = "Token errato! Riprova.";
+        feedback.classList.remove("hidden");
+        feedback.style.color = "red";
     }
-    
-    // Make feedback visible
-    feedback.classList.remove('hidden');
 }
+const userRouteCode = document.getElementById('userRouteCode');
+const nextEnigmaButton = document.getElementById('nextEnigmaButton');
+
+userRouteCode.onchange = function() {
+    if (userRouteCode.value) {
+        nextEnigmaButton.disabled = false; // Enable the button if a valid option is selected
+    } else {
+        nextEnigmaButton.disabled = true; // Keep it disabled if no valid option is selected
+    }
+};
